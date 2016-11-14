@@ -169,6 +169,7 @@ body{
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition:.5s;
+    overflow: hidden;
 }
 #CharlesPage{
     position: absolute;
@@ -182,7 +183,7 @@ body{
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition:.5s;
-    
+    overflow: hidden;
 }
 #CharlesPage img,#CharliePage img{
     position:absolute;
