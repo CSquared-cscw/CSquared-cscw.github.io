@@ -1,0 +1,265 @@
+.background { 
+    position: fixed;
+    width:100%;
+    height:100%;
+    bottom:0;
+    left:0;
+    background: url(../Stuff/Background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -moz-animation: fadein 3s; /* Firefox */
+    -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera */
+    animation: fadein 3s;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+    
+}
+
+.center{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width:100%
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -moz-animation: fadein 2s; /* Firefox */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera */
+    animation: fadein 2s;
+}
+
+.middle{
+    width:50%;
+    margin:auto;
+}
+
+.center h1{
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #000000;
+    font-size: 125px;
+    font-family: Square;
+    margin:0;
+    padding: 0px 10px 0px 10px;
+}
+
+.center h2{
+    letter-spacing: 3px;
+    width:550px;
+    color:white;
+    border-right:1.5px solid;
+    text-shadow: 0.5px 0.5px 0.5px black;
+    font-family: "Courier";
+    text-align:center;
+    margin: 13px auto 0px auto;
+    font-size: 30px;
+    padding: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width:0;
+    text-shadow: 2px 2px 5px #000000;
+    -webkit-animation: typing 7s steps(25, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 7s steps(25, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite; 
+
+
+}
+
+.baner{
+    position: absolute;
+    z-index: 1;
+    top:0;
+    width:100%;
+    text-align: center;
+    padding:30px;
+    background-color: rgba(97, 79, 113, 0.95);
+    height: 4%;
+}
+.baner a, #about, #contact, #home{
+    cursor:pointer;
+    font-family:Square;
+    display:inline;
+    margin:5%;
+    color:white;
+    font-size: 40px;
+    text-decoration: none;
+}
+.baner img{
+    position:absolute;
+    height:95px;
+    left:0;
+    top:0;
+}
+#home {
+    color: #9647B7;
+    font-weight: bold;
+    font-size:50px;
+}
+
+.slideshow{
+    position: absolute;
+    height:400px;
+    bottom: 40px;
+    width: 60%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: body1;
+    font-size: 20px;
+    overflow:hidden;
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -moz-animation: fadein 2s; /* Firefox */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera */
+    animation: fadein 2s;
+    
+}
+
+.SlideBack {
+    position:relative;
+    z-index:-1;
+    height:100%;
+    width:100%;
+    /* Prefix free isn't picking up this one */
+    -webkit-filter: url('#blur');
+    filter: url('#blur');
+    -webkit-filter: blur(10px);
+    filter: blur(100px);
+    background-size: cover;
+    background-color:rgba(255, 255, 255, 0.22);
+}
+#slide1{
+    position:absolute;
+    top:10px;
+    left:50%;
+    transform:translate(-50%);
+    display: block;
+    color:white;
+     text-shadow: 0.5px 0.5px 0.5px black;
+    
+    font-size: 30;
+}
+#slide2{
+    position:absolute;
+    top:10px;
+    left:50%;
+    transform:translate(-50%);
+    display: none;
+    color:white;
+     text-shadow: 0.5px 0.5px 0.5px black;
+
+    font-size: 30;
+}
+#slide3{
+    position:absolute;
+    top:10px;
+    left:50%;
+    transform:translate(-50%);
+    display: none;
+    color:white;
+     text-shadow: 0.5px 0.5px 0.5px black;
+    font-size: 30;
+}
+.dots{
+    height:30px;
+    position:absolute;
+    bottom:0;
+    width:210px;
+    left:50%;
+    transform:translate(-50%);
+}
+#dot1, #dot2, #dot3{
+    width:50px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+    float:left;
+    margin: 10px;
+    cursor:pointer;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+#dot1{
+    background-color:#9647B7;
+}
+
+
+
+@font-face {
+    font-family: 'Square';
+    src: url('../Stuff/Fonts/Square/square.woff2') format('woff2'),
+         url('../Stuff/Fonts/Square/square.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:body1;
+    src: url('../Stuff/Fonts/athabasca/athabasca-lt.woff2') format('woff2'),
+         url('../Stuff/Fonts/athabasca/athabasca-lt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@-webkit-keyframes RL {
+    from { right: -1000px; }
+    to { right: 50px; }
+}
+@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width:524.5px }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width:600px }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white}
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white}
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+        /* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+        /* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+        /* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+        /* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

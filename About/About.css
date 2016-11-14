@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    background-color: #594760;
+}
+@font-face {
+    font-family: 'Square';
+    src: url('../Stuff/Fonts/Square/square.woff2') format('woff2'),
+         url('../Stuff/Fonts/Square/square.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:body1;
+    src: url('../Stuff/Fonts/athabasca/athabasca-lt.woff2') format('woff2'),
+         url('../Stuff/Fonts/athabasca/athabasca-lt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.background{
+    height:100%;
+}
+.top{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    animation: TD;
+    animation-duration: 2s;
+}
+.Main p::-webkit-scrollbar {
+    width: 7px;
+}
+/*.Main p::-webkit-scrollbar-track{
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(212, 212, 212, 0.49);
+        
+}
+/* Handle */
+.Main p::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #9647B7; 
+     
+}
+
+.Main p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height:30%;
+    width:70%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white; 
+    font-size: 30px;
+    font-family:body1;
+    line-height: 30px;
+    overflow-y: auto;
+    padding:10px;
+    
+
+}
+
+.title{
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.title h1{
+    color: white;
+    text-shadow: 2px 2px 5px #000000;
+    font-size: 70px;
+    font-family: Square;
+    margin: 0;
+}
+
+.baner{
+    position: absolute;
+    z-index: 1;
+    top:0;
+    width:100%;
+    text-align: center;
+    padding:30px;
+    background-color: rgba(97, 79, 113, 0.95);
+    height: 4%;
+}
+.baner a, #about, #contact, #home{
+    cursor:pointer;
+    font-family:Square;
+    display:inline;
+    margin:5%;
+    color:white;
+    font-size: 40px;
+    text-decoration: none;
+}
+#about {
+    color:#9647B7;
+    font-weight: bold;
+    font-size: 50px;
+}
+.baner img{
+    position:absolute;
+    height:95px;
+    left:0;
+    top:0;
+}
+/*table ********************************************************/
+.bottom{
+    position:absolute;
+    height:20%;
+    width:90%;
+    bottom:0;
+    left:50%;
+    transform: translate(-50%);
+}
+.Charles{
+    position:absolute;
+    width:200px;
+    height:20%;
+    margin-left:10%;
+    text-align: center;
+    font-family: square;
+    color:white;
+    animation: LR;
+    animation-duration: 2s;
+}
+
+.Charlie{
+    position:absolute;
+    width:200px;
+    height:20%;
+    margin-right:10%;
+    right:0;
+    text-align: center;
+    font-family: square;
+    color:white;
+    animation: RL;
+    animation-duration: 2s;
+}
+.Charles h3,.Charlie h3{
+    font-size: 50px;
+    margin:0;
+    cursor: pointer;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+.Charles h3:hover,.Charlie h3:hover{
+    color: #9647B7;
+}
+#CharliePage{
+    position:absolute;
+    z-index:1;
+    top:65%;
+    display:none;
+    width:100%;
+    height:100%;
+    background-color:  rgba(97, 79, 113, 0.95);
+    animation: scrollUp;
+    animation-duration: 1s;
+}
+#CharlesPage{
+    position: absolute;
+    z-index: 1;
+    top:65%;
+    display:none;
+    width:100%;
+    height:100%;
+    background-color: rgba(97, 79, 113, 0.95);
+    animation: scrollUp;
+    animation-duration: 1s;
+}
+#CharlesPage img,#CharliePage img{
+    position:absolute;
+    right:10;
+    top:20;
+    transform: translate(-50%);
+    width:50px;
+    cursor: pointer;
+}
+#CharlesPage h1,#CharliePage h1{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-family: square;
+    color: #9647B7;
+    font-size: 50px;
+    
+}
+#CharlesPage p,#CharliePage p{
+    position: absolute;
+    top: 14%;
+    left: 5%;
+    font-family: body1;
+    color:white;
+    font-size: 30px;
+}
+#CharlesPage #skills,#CharliePage #skills{
+    position: absolute;
+    top: 19%;
+    left: 5%;
+    font-family: body1;
+}
+#CharlesPage #hobbies,#CharliePage #hobbies{
+    position: absolute;
+    top: 24%;
+    left: 5%;
+    font-family: body1;
+}
+@media screen and (min-width: 900px) {
+    .baner{
+        text-align: center;
+    }
+}
+@-webkit-keyframes scrollUp {
+    from {top:1000; }
+    to { top:65%; }
+}
+@-webkit-keyframes LR {
+    from {left: -1000px; }
+    to { left: 0px; }
+}
+@-webkit-keyframes RL {
+    from { right: -1000px; }
+    to { right: 0; }
+}
+@-webkit-keyframes RL2 {
+    from { right: -1000px; }
+    to { right: 50px; }
+}
+@-webkit-keyframes TD {
+    from { top: -1000px; }
+    to { top: 0px; }
+}
