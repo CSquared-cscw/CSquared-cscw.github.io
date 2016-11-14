@@ -88,8 +88,7 @@ body{
     width:100%;
     text-align: center;
     padding:30px;
-    background-color: rgba(97, 79, 113, 0.95);
-    height: 4%;
+    background-color: rgba(17, 17, 17, 0.94);
 }
 .baner a, #about, #contact, #home{
     cursor:pointer;
@@ -107,7 +106,7 @@ body{
 }
 .baner img{
     position:absolute;
-    height:95px;
+    height:100px;
     left:0;
     top:0;
 }
@@ -161,24 +160,29 @@ body{
 #CharliePage{
     position:absolute;
     z-index:1;
-    top:65%;
-    display:none;
+    bottom: 0;
     width:100%;
-    height:100%;
-    background-color:  rgba(97, 79, 113, 0.95);
-    animation: scrollUp;
-    animation-duration: 1s;
+    height:0;
+    background-color: rgba(17, 17, 17, 0.94);
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
 }
 #CharlesPage{
     position: absolute;
     z-index: 1;
-    top:65%;
-    display:none;
+    bottom: 0;
     width:100%;
-    height:100%;
-    background-color: rgba(97, 79, 113, 0.95);
-    animation: scrollUp;
-    animation-duration: 1s;
+    height:0;
+    background-color: rgba(17, 17, 17, 0.94);
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    
 }
 #CharlesPage img,#CharliePage img{
     position:absolute;
@@ -190,7 +194,7 @@ body{
 }
 #CharlesPage h1,#CharliePage h1{
     position: absolute;
-    top: 5%;
+    top: 30px;
     left: 5%;
     font-family: square;
     color: #9647B7;
@@ -199,7 +203,7 @@ body{
 }
 #CharlesPage p,#CharliePage p{
     position: absolute;
-    top: 14%;
+    top: 105px;
     left: 5%;
     font-family: body1;
     color:white;
@@ -207,13 +211,13 @@ body{
 }
 #CharlesPage #skills,#CharliePage #skills{
     position: absolute;
-    top: 19%;
+    top: 155px;
     left: 5%;
     font-family: body1;
 }
 #CharlesPage #hobbies,#CharliePage #hobbies{
     position: absolute;
-    top: 24%;
+    top: 210px;
     left: 5%;
     font-family: body1;
 }
@@ -241,4 +245,46 @@ body{
 @-webkit-keyframes TD {
     from { top: -1000px; }
     to { top: 0px; }
+}
+
+/*Sidenav***********************************************************/
+.sidenav {
+    height: 30%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 101px;
+    right: 0;
+    background-color: rgba(17, 17, 17, 0.94);
+    overflow: hidden;
+    transition: 0.5s;
+    font-family: body1 ;
+}
+
+.sidenav li {
+    padding: 8px 8px 8px 2px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+.closebtn:hover {
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }

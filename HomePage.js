@@ -22,3 +22,11 @@ function Click3(){
     document.getElementById("dot2").style.backgroundColor="rgba(0, 0, 0, 0.6)";
     document.getElementById("dot3").style.backgroundColor="#9647B7";
 }
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "500px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}

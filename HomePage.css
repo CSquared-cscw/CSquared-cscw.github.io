@@ -19,7 +19,7 @@
 body{
     margin: 0;
     overflow: hidden;
-    
+     
 }
 
 .center{
@@ -81,8 +81,7 @@ body{
     width:100%;
     text-align: center;
     padding:30px;
-    background-color: rgba(97, 79, 113, 0.95);
-    height: 4%;
+    background-color: rgba(17, 17, 17, 0.94);
 }
 .baner a, #about, #contact, #home{
     cursor:pointer;
@@ -95,7 +94,7 @@ body{
 }
 .baner img{
     position:absolute;
-    height:95px;
+    height:100px;
     left:0;
     top:0;
 }
@@ -262,4 +261,46 @@ body{
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+/*Sidenav***********************************************************/
+.sidenav {
+    height: 30%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 101px;
+    right: 0;
+    background-color: rgba(17, 17, 17, 0.94);
+    overflow: hidden;
+    transition: 0.5s;
+    font-family: body1 ;
+}
+
+.sidenav li {
+    padding: 8px 8px 8px 2px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+.closebtn:hover {
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
