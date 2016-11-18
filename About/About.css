@@ -23,12 +23,12 @@ body{
 }
 .top{
     position:absolute;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    animation: TD;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    animation:TD;
     animation-duration: 2s;
+    
 }
 .Main p::-webkit-scrollbar {
     width: 7px;
@@ -48,12 +48,6 @@ body{
 }
 
 .Main p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height:30%;
-    width:70%;
-    transform: translate(-50%,-50%);
     text-align: center;
     color: white; 
     font-size: 30px;
@@ -61,15 +55,12 @@ body{
     line-height: 30px;
     overflow-y: auto;
     padding:10px;
-    
+    animation: TD;
+    animation-duration: 2s;
 
 }
 
 .title{
-    position: absolute;
-    top: 27%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     text-align: center;
 }
 
@@ -79,6 +70,7 @@ body{
     font-size: 70px;
     font-family: Square;
     margin: 0;
+    
 }
 
 .baner{
@@ -255,7 +247,7 @@ body{
 }
 @-webkit-keyframes TD {
     from { top: -1000px; }
-    to { top: 0px; }
+    to { top: 50%; }
 }
 
 /*Sidenav***********************************************************/
