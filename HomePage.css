@@ -2,7 +2,7 @@
     position: fixed;
     width:100%;
     height:100%;
-    background: url(../Stuff/Background.jpg) no-repeat center center fixed; 
+    background: url(Stuff/Background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,7 +17,8 @@
 body{
     margin: 0;
     overflow: hidden;
-     
+    background-color: rgb(33,51,67);
+    height:100%; 
 }
 
 .center{
@@ -78,17 +79,16 @@ body{
     top:0;
     width:100%;
     text-align: center;
-    padding:30px;
+    height:101px;
     background-color: rgba(17, 17, 17, 0.94);
 }
-.baner a, #about, #contact, #home{
+.baner a{
     cursor:pointer;
     font-family:Square;
-    display:inline;
-    margin:5%;
     color:white;
     font-size: 40px;
     text-decoration: none;
+    margin:0px 5% 0px 5%;
 }
 .baner img{
     position:absolute;
@@ -97,11 +97,28 @@ body{
     top:0;
 }
 #home {
-    color: #9647B7;
+    color: #9647b7;
     font-weight: bold;
     font-size:50px;
 }
-
+#home{
+    position: absolute;
+    top:33;
+    left:20%;
+    transform: translate(-50%);
+}
+#about {
+    position:absolute;
+    top:33;
+    left:45%;
+    transform: translate(-50%);
+}
+#contact{
+    position:absolute;
+    top:33;
+    left:70%;
+    transform: translate(-50%);
+}
 .slideshow{
     position: absolute;
     height:400px;
@@ -128,8 +145,15 @@ body{
     width:100%;
     /* Prefix free isn't picking up this one */
     background-size: cover;
-   background-color: rgba(17, 17, 17, 0.5);
+    background-color: rgba(17, 17, 17, 0.5);
     border-radius:10px;
+}
+.slidetext{
+    width:80%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
 #slide1{
     position:absolute;
@@ -140,6 +164,7 @@ body{
     color:white;
     text-shadow: 0.5px 0.5px 0.5px black;
     font-size: 30;
+    width:90%;
 }
 #slide2{
     position:absolute;
@@ -150,6 +175,7 @@ body{
     color:white;
     text-shadow: 0.5px 0.5px 0.5px black;
     font-size: 30;
+    width:90%;
 }
 #slide3{
     position:absolute;
@@ -160,6 +186,7 @@ body{
     color:white;
     text-shadow: 0.5px 0.5px 0.5px black;
     font-size: 30;
+    width:90%;
 }
 .dots{
     height:30px;
@@ -186,20 +213,40 @@ body{
 #dot1{
     background-color:#9647B7;
 }
-
+#arrow-left{
+    float:left;
+    
+}
+#arrow-left img{
+    width:100px;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+    cursor:pointer;
+}
+#arrow-right{
+    float:right;
+}
+#arrow-right img{
+    width:100px;
+    -ms-transform: rotate(135deg); /* IE 9 */
+    -webkit-transform: rotate(135deg); /* Chrome, Safari, Opera */
+    transform: rotate(135deg);
+    cursor:pointer;
+}
 
 
 @font-face {
     font-family: 'Square';
-    src: url('../Stuff/Fonts/Square/square.woff2') format('woff2'),
-         url('../Stuff/Fonts/Square/square.woff') format('woff');
+    src: url('Stuff/Fonts/Square/square.woff2') format('woff2'),
+         url('Stuff/Fonts/Square/square.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:body1;
-    src: url('../Stuff/Fonts/athabasca/athabasca-lt.woff2') format('woff2'),
-         url('../Stuff/Fonts/athabasca/athabasca-lt.woff') format('woff');
+    src: url('Stuff/Fonts/athabasca/athabasca-lt.woff2') format('woff2'),
+         url('Stuff/Fonts/athabasca/athabasca-lt.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -258,7 +305,7 @@ body{
 
 /*Sidenav***********************************************************/
 .sidenav {
-    height: 30%;
+    height: 200px;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -271,20 +318,37 @@ body{
 }
 
 .sidenav li {
-    padding: 8px 8px 8px 2px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #ffffff;
     display: block;
-    transition: 0.3s;
-    
 }
-
-.closebtn:hover {
-    color: #f1f1f1;
+.email{
+}
+.closebtn{
+    width:50px;
     cursor: pointer;
 }
-
+.bottomContact{
+    padding-top:20px;
+    height:60px;
+    width:450px;
+    margin:auto;
+    overflow: hidden;
+}
+.socialMedia{
+    width:50px;
+    height:50px;
+    border-radius:100px;
+    float:left;
+    margin:0px 50px 0px 50px;
+    background-color:white;
+    cursor:pointer;
+}
+#facebook img{
+    width:50px;
+    margin:0;
+}
 .sidenav .closebtn {
     position: absolute;
     top: 0;

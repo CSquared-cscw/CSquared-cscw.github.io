@@ -87,22 +87,37 @@ body{
     top:0;
     width:100%;
     text-align: center;
-    padding:30px;
+    height:101px;
     background-color: rgba(17, 17, 17, 0.94);
 }
-.baner a, #about, #contact, #home{
+.baner a{
     cursor:pointer;
     font-family:Square;
-    display:inline;
-    margin:5%;
     color:white;
     font-size: 40px;
     text-decoration: none;
+    margin:0px 5% 0px 5%;
+}
+#home{
+    position: absolute;
+    top:33;
+    left:20%;
+    transform: translate(-50%);
 }
 #about {
+    position:absolute;
     color:#9647B7;
     font-weight: bold;
     font-size: 50px;
+    top:33;
+    left:45%;
+    transform: translate(-50%);
+}
+#contact{
+    position:absolute;
+    top:33;
+    left:70%;
+    transform: translate(-50%);
 }
 .baner img{
     position:absolute;
@@ -222,11 +237,6 @@ body{
     left: 5%;
     font-family: body1;
 }
-@media screen and (min-width: 900px) {
-    .baner{
-        text-align: center;
-    }
-}
 @-webkit-keyframes scrollUp {
     from {top:1000; }
     to { top:65%; }
@@ -250,7 +260,7 @@ body{
 
 /*Sidenav***********************************************************/
 .sidenav {
-    height: 30%;
+    height: 200px;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -263,20 +273,37 @@ body{
 }
 
 .sidenav li {
-    padding: 8px 8px 8px 2px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #ffffff;
     display: block;
-    transition: 0.3s;
-    
 }
-
-.closebtn:hover {
-    color: #f1f1f1;
+.email{
+}
+.closebtn{
+    width:50px;
     cursor: pointer;
 }
-
+.bottomContact{
+    padding-top:20px;
+    height:60px;
+    width:450px;
+    margin:auto;
+    overflow: hidden;
+}
+.socialMedia{
+    width:50px;
+    height:50px;
+    border-radius:100px;
+    float:left;
+    margin:0px 50px 0px 50px;
+    background-color:white;
+    cursor:pointer;
+}
+#facebook img{
+    width:50px;
+    margin:0;
+}
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -284,7 +311,6 @@ body{
     font-size: 36px;
     margin-left: 50px;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}

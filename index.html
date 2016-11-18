@@ -1,7 +1,7 @@
 <html> 
     <head> 
         <link type = "text/css" rel = "stylesheet" href = "HomePage.css">
-        <link rel="shortcut icon" type="image/x-icon" href="../Stuff/Logo.png" />
+        <link rel="shortcut icon" type="image/x-icon" href="Stuff/Logo.png" />
         <title>C_Squared</title>
         <script src="HomePage.js"></script>
     </head>
@@ -10,22 +10,34 @@
         <div class="background">
         </div>
         <div class="baner">
-            <img src="../Stuff/Logo.png">
+            <img src="Stuff/Logo.png">
 
-            <a id="home" href="../Home/index.html">Home</a>
-            <a id="about" href="../About/About.html">About</a>
+            <a id="home" href="index.html">Home</a>
+            <a id="about" href="About/About.html">About</a>
             <a id="contact" onclick="openNav()">Contact Us</a>
         
         </div>
         
         <div id="mySidenav" class="sidenav">
-            <ul>
-                <li href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</li>
-                <li>Email:</li>
-                <li>csquared.cscw@gmail.com</li>
-                <li>Social media:</li>
-                <li>oooooho</li>
-            </ul>
+
+            <img src="Stuff/X.png" class="closebtn" onclick="closeNav()">
+            <div class="email">
+                <ul>
+                    <li>Email:</li>
+                    <li>csquared.cscw@gmail.com</li>
+                </ul>
+                
+            </div>
+            <div class="bottomContact">
+                <div id="facebook" class="socialMedia" onclick="location.href='https://www.facebook.com/CSquared.cscw/'">
+                   <img src="Stuff/facebook.png">
+                </div>
+                <div class="socialMedia"></div>
+                <div class="socialMedia"></div>
+                    
+            </div>
+                
+            
         </div>
         
         <div class="Center">
@@ -37,13 +49,32 @@
             <div class="SlideBack">
             </div>
             <div id="slide1">
-                <p>Our front end web development company is cheaper than most, only charging £200 per week depending on the size of the project. </p>
+                <div class="slidetext">
+                    <p>Our front end web development company is cheaper than most, only charging £200 per week depending on the size of the project. </p>
+                </div>
+                
+                <div id="arrow-right">
+                    <img src="Stuff/arrow.png" onclick="Right1()">
+                </div>
             </div>
             <div id="slide2">
-                <p>We are here to help you through the process of creating a website, starting with design ideas all the way to making a fully functional website for you.</p>
+                <div id="arrow-left">
+                    <img src="Stuff/arrow.png" onclick="Left2()">
+                </div>
+                <div class="slidetext">
+                    <p>We are here to help you through the process of creating a website, starting with design ideas all the way to making a fully functional website for you.</p>
+                </div>
+                <div id="arrow-right">
+                    <img src="Stuff/arrow.png" onclick="Right2()">
+                </div>
             </div>
             <div id="slide3">
-                <p>Contact us for an estimated completion date and price and we will reply to any requests and emails within 24 hours.</p>
+                <div id="arrow-left">
+                    <img src="Stuff/arrow.png" onclick="Left3()">
+                </div>
+                <div class="slidetext">
+                    <p>Contact us for an estimated completion date and price and we will reply to any requests and emails within 24 hours.</p>
+                </div>
             </div>
             <div class="dots">
                 <div onclick="Click1()" id="dot1">
