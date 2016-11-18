@@ -135,10 +135,15 @@ body{
     -ms-animation: fadein 2s; /* Internet Explorer */
     -o-animation: fadein 2s; /* Opera */
     animation: fadein 2s;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
     
 }
 
-.SlideBack {
+.slideback {
     position:relative;
     z-index:-1;
     height:100%;
@@ -147,6 +152,11 @@ body{
     background-size: cover;
     background-color: rgba(17, 17, 17, 0.5);
     border-radius:10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
 }
 .slidetext{
     width:80%;
@@ -234,12 +244,17 @@ body{
     transform: rotate(135deg);
     cursor:pointer;
 }
+@media screen and (max-width: 1000px) {
+    .slideshow {width:100%;}
+    .slideback{border-radius:0px;}
+
+}
 @media screen and (max-height: 500px) {
-  .slideshow {display:none;}
+    .slideshow {display:none;}
 
 }
 @media screen and (min-height: 1024px) {
-  .slideshow {bottom:20%;}
+    .slideshow {bottom:20%;}
 
 }
 
