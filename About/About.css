@@ -34,8 +34,7 @@ body{
     top:47%;
     left:50%;
     transform: translate(-50%,-50%);
-    animation:TD;
-    animation-duration: 2s;
+    
     
 }
 .Main p::-webkit-scrollbar {
@@ -64,8 +63,6 @@ body{
     overflow-y: auto;
     padding:10px;
     height:300px;
-    animation: TD;
-    animation-duration: 2s;
 
 }
 
@@ -143,8 +140,6 @@ body{
     text-align: center;
     font-family: square;
     color:white;
-    animation: LR;
-    animation-duration: 2s;
 }
 
 .Charlie{
@@ -156,8 +151,7 @@ body{
     text-align: center;
     font-family: square;
     color:white;
-    animation: RL;
-    animation-duration: 2s;
+    
 }
 .Charles h3,.Charlie h3{
     font-size: 50px;
@@ -238,6 +232,23 @@ body{
     left: 5%;
     font-family: body1;
 }
+@media screen and (min-width: 1024px) {
+    .Charlie {
+        animation: RL;
+        animation-duration: 2s;
+    }
+    .Charles{
+        animation: LR;
+        animation-duration: 2s;
+    }
+    .top{
+        animation:TD;
+        animation-duration: 2s;
+    }
+    
+
+}
+
 @-webkit-keyframes scrollUp {
     from {top:1000; }
     to { top:65%; }
