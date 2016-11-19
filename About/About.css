@@ -1,3 +1,6 @@
+html{
+    overflow:hidden;
+}
 body{
     margin: 0;
     overflow: hidden;
@@ -22,8 +25,9 @@ body{
     height:100%;
 }
 .top{
+    width:70%;
     position:absolute;
-    top:50%;
+    top:47%;
     left:50%;
     transform: translate(-50%,-50%);
     animation:TD;
@@ -55,6 +59,7 @@ body{
     line-height: 30px;
     overflow-y: auto;
     padding:10px;
+    height:300px;
     animation: TD;
     animation-duration: 2s;
 
@@ -247,7 +252,7 @@ body{
 }
 @-webkit-keyframes TD {
     from { top: -1000px; }
-    to { top: 50%; }
+    to { top: 47%; }
 }
 
 /*Sidenav***********************************************************/
@@ -303,7 +308,4 @@ body{
     font-size: 36px;
     margin-left: 50px;
 }
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+
