@@ -19,6 +19,11 @@ body{
     overflow: hidden;
     background-color: rgb(33,51,67);
     height:100%; 
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
 }
 
 .center{
